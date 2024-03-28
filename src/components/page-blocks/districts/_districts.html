@@ -1,0 +1,22 @@
+<section class="districts">
+    <div class="container">
+        <div class="districts__title section-title"">
+
+            <h2 class="title-2">районы </h2>
+            <div class="districts__swiper-buttons">
+                <button class="swiper-button districts__swiper-button-prev --svg__arrow-prev-before"></button>
+                <button class="swiper-button districts__swiper-button-next --svg__arrow-next-before"></button>
+            </div>
+        </div>
+    </div>
+        <div class="container-right">
+            <div class="districts__slider">
+
+                <div class="districts__wrapper swiper-wrapper">
+
+                    @@loop('../../../templates/districts.html', "./data/districts__swiper-slide.json')
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

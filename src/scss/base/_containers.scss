@@ -1,0 +1,36 @@
+$container-width: 1380px;
+$container-padding: 20px;
+
+
+$laptop-size: 1199px;
+$tablet-size: 800px;
+$mobile-size: 599px;
+
+
+
+.container {
+  padding: 0 $container-padding;
+  max-width: $container-width;
+  margin: 0 auto;
+}
+.container-right {
+    padding-left: $container-padding;
+    @media (min-width: calc($container-width + 40px)) {
+      padding: 0 $container-padding;
+      max-width: $container-width;
+      margin: 0 auto;
+  }
+  }
+
+
+.container-left {
+  /* overflow-x: hidden; */
+  padding-right: calc((100% - $container-width)) / 2 + $container-padding;
+
+  @media (max-width: $laptop-size) {
+    padding-right: $container-padding;
+  }
+}
+
+
+

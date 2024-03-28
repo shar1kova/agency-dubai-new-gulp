@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.flex {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.--just-space {
+	justify-content: space-between;
+}
+
+.--just-center {
+	justify-content: center;
+}
+
+.--just-end {
+	justify-content: flex-end;
+}
+
+.--align-str {
+	align-items: stretch;
+}
+
+.--align-center {
+	align-items: center;
+}
+
+.--align-end {
+	align-items: flex-end;
+}
+
+.--dir-col {
+	flex-direction: column;
+}
+
+html {
+	font-size: 18px;
+}
+
+html,
+body {
+	height: 100%;
+	position: relative;
+
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+// a:hover{
+// 	opacity: .8;
+// 	transition: all .2s ease-in;
+// }
+
+.swiper-buttons{
+	display: flex;
+	gap: 10px;
+}
+.section__title{
+
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+}
+
+.subtitle{
+	font-size: clamp(8px, 1.2vw, 10px);
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: clamp(2px, 2vw, 3px) ;
+    text-transform: uppercase;
+    opacity: .8;
+
+}
+
+
+ 
+ .content {
+	flex: 1 0 auto;
+ }
+ 
+ .footer {
+	flex-shrink: 0;
+ }
+
+ .no_scroll{
+	overflow: hidden;
+	&::-webkit-scrollbar {
+        display: none;
+      }
+      -ms-overflow-style: none;  /* IE и Edge */
+    scrollbar-width: none;  /* Firefox */
+	touch-action: none; /*no mobile scroll*/
+  }

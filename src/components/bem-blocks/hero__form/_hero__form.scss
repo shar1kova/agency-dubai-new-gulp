@@ -1,0 +1,172 @@
+.hero__form{
+ 
+    display: none;
+    @media (min-width:1200px) {
+        display: block;
+        margin-top: 165px;}
+}
+.hero__form-form{
+    width: 100%;
+    border-radius: 99px;
+    
+    background: rgb(255, 255, 255);
+
+}
+
+.hero__form-select{
+    background: transparent;
+    border: none;
+   
+}
+
+.hero__form-input{
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+
+        &:focus-visible{
+           outline: none;
+        }
+}
+
+.hero__form-button{
+    border: none;
+    background-color: $accent ;
+    color: #fff;
+    align-self: stretch;
+    padding: 35px 54px 35px 54px;
+    border-radius: 99px;
+    position: relative;
+
+    
+    font-family: 'NeutralFace';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.hero__form-fieldset{
+    padding: 30px 0 33px 30px;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+// .select-box{
+//     display: flex;
+//     .options-container{
+//         background-color: #fff;
+//         max-height: 0;
+//         width: 100%;
+//         opacity: 0;
+//         transition: all .4s;
+//         border-radius: 32px;
+//         overflow: hidden;
+
+//     }
+
+//     .options-container.active{
+//         max-height: 240px;
+//         opacity: 1;
+//     }
+//     .option,
+//     .selected {
+//         cursor: pointer;
+//         padding: 12px 24px;
+//     }
+//     .option:hover{
+//         background-color: gray;
+//     }
+//     label{
+//         cursor: pointer;
+//     }
+
+//     .option .radio{
+//         display: none;
+//     }
+
+
+// }
+
+.select {
+    position: relative;
+  }
+  
+
+  
+  .selectWrapper {
+    position: relative;
+  }
+  
+  .selectCustom {
+    position: relative;
+  
+  }
+  
+  .selectCustom-trigger {
+    background-color: #fff;
+
+    cursor: pointer;
+  }
+  
+  .selectCustom-trigger {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+
+  }
+  
+  .selectCustom-trigger::after {
+    position: absolute;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    margin-left: 50px;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+
+  .selectCustom-options {
+    position: absolute;
+    left: -50%;
+   cursor: pointer;
+    background-color: #fff;
+    z-index: 1;
+    padding: 10px 20px;
+    display: none;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+
+  }
+  
+  .selectCustom.isActive .selectCustom-options {
+    display: block;
+  }
+  
+  .selectCustom-option {
+    position: relative;
+    padding: 10px;
+  }
+  
+
+  
+  .selectCustom-option:not(:last-of-type)::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+    right: -20px;
+    border-bottom: 1px solid #d3d3d3;
+  }
+  
+  // ----- Theme styles -----
+  
+ 

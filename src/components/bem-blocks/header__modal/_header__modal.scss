@@ -1,0 +1,112 @@
+.header-modal{
+    width: 100vw;
+    height: 100vh;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 93px;
+    left: 0;
+    z-index: 99; 
+    transform: translate(0, -120%);
+    transition: all 1s;
+    &.active{
+        transform: translate(0, 0);
+        display: block;
+        @supports (-webkit-touch-callout: none) {
+            .h-screen {
+              height: -webkit-fill-available;
+            }
+          }
+    }
+}
+.header-modal__header{
+    padding: 19px 0;
+    position: relative;
+
+    &::before{
+        content: '';
+        position: absolute;
+        left: -20px;
+        right: -20px;
+        height: 1px;
+        background-color: rgba(0, 0, 0, .1);
+        bottom: 0;
+    }
+
+}
+
+.header-modal__header-item{
+    &::after,
+    &::before{
+        position: absolute;
+        display: block;
+        background-repeat: no-repeat;
+        background-size: contain;
+    
+    }
+
+    &--dubai{
+        padding-left: 31px;
+        position: relative;
+            &::after{
+                top: 50%;
+            left: 10px;
+            width: 20px;
+            height: 20px;
+                transform: translate(-50%, -50%);
+            }
+    }
+    &--arrow-2{
+        padding-right: 19px;
+        position: relative;
+            &::before{
+                top: 50%;
+            right: 0px;
+            width: 10px;
+            height: 10px;
+        
+            }
+    }
+}
+
+.header-modal__list {
+    padding: 40px 0;
+    font-size: 32px;
+    line-height: 33px;
+
+    gap: 40px;
+
+    position: relative;
+
+    &::before{
+        content: '';
+        position: absolute;
+        left: -20px;
+        right: -20px;
+        height: 1px;
+        background-color: rgba(0, 0, 0, .1);
+        bottom: 0;
+    }
+
+}
+
+.header-modal__footer {
+    padding: 30px 0;
+
+font-size: 24px;
+font-weight: 400;
+line-height: 25px;
+gap: 22px;
+
+}
+
+
+.header-modal__footer-list-item {
+ 
+display: flex;
+gap: 16px;
+align-items: center;
+    &::before{
+        left: 0px;
+    }
+}

@@ -1,0 +1,27 @@
+.projects__header-slider{
+    padding: 4px 0 20px 0;
+    display: flex;
+    gap: 10px;
+    overflow-y: hidden;
+
+    &::-webkit-scrollbar {
+        display: none;
+      }
+      -ms-overflow-style: none;  /* IE и Edge */
+    scrollbar-width: none;  /* Firefox */
+
+    @media (min-width:800px) {
+      padding: 0px 0 38px 0;
+  
+  }
+}
+
+.projects__header-slider-item{
+  padding: 12px 24px;
+  border-radius: 45px;
+  border: 1px solid rgb(0, 0, 0);
+  &--active{
+    color: #fff;
+    background-color: #000;
+  }
+}
